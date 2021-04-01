@@ -1,6 +1,46 @@
 {\justifying
 	\chapter{Model}
-	\section{Background}
-	\section{Problem}
-	\section{Interest}
+	The model will be classification, specifically it will be used the algorithm K-means, I make seven clustering with all venues to be able to determine similar neighborhood in Bogotá.
+	\section{K-means}
+	With the data collected from Foursquare (all venues) it has been made seven clusters as shown in the image
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{png/clustering3.png}
+		\caption{Clustering}
+	\end{figure}
+	With this model together with data on population, the number of restaurants (all types), GYM, and Shopping malls, you may be able to choose the best place (neighborhood) to start your healthy food restaurant. So the group that contains some GYM restaurants and the mall was group 1 as shown in the table
+	\begin{center}
+		\begin{tabular}{lrrrr}
+			\toprule
+			Neighborhood &  Population &  Restaurant &  Gym &  Shopping Mall \\
+			\midrule
+			TUNJUELITO &         200048.0 &        11.0 &  1.0 &            1.0 \\
+			ANTONIO NARIÑO &	108941.0 &	10.0 &	2.0 &	0.0\\
+			PUENTE ARANDA &         258414.0 &        18.0 &  1.0 &            1.0 \\
+			USAQUÉN &         494066.0 &         8.0 &  2.0 &            0.0 \\
+			RAFAEL URIBE URIBE &         375107.0 &        10.0 &  0.0 &            0.0 \\
+			KENNEDY &        1069469.0 &        15.0 &  3.0 &            0.0 \\
+			ENGATIVÁ &         874755.0 &        15.0 &  3.0 &            1.0 \\
+			SUBA &        1174736.0 &        10.0 &  1.0 &            1.0 \\
+			\bottomrule
+		\end{tabular}
+	\end{center}
+	In theory any neighborhood of this set is recommended.
+	\section{Conclusion}
+	With previous model and data of population, the number of restaurants (all types), GYM, and Shopping malls seems that the best place for healthy food restaurant is PUENTE ARANDA, because there are a population moderately high and restaurants with high frequency as shown in the list
+	\begin{enumerate}
+		\item Seafood Restaurant
+		\item Mexican Restaurant
+		\item Restaurant
+		\item Burger Joint
+	 	\item BBQ Joint
+	 	\item French Restaurant
+	 	\item Park
+	 	\item Sandwich Place
+	 	\item Creperie
+	 	\item South American Restaurant
+	\end{enumerate}
+	Besides, more 50 percent the most frequent venues are related to food or restaurants and at least there is a GYM a shopping mall in this neighborhood.
+	\section{Future directions}
+	It is possible to improve the model with data with more qualitative and quantitative variables of the population and updating of places in Bogota.
 }\cleanalldata
